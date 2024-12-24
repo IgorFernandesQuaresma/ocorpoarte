@@ -1,101 +1,51 @@
 import Image from "next/image";
+import Link from 'next/link';
+import Menu from "../components/menu/Menu";
+import Button from "../components/button/Button";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <div className="grid grid-rows-[auto_1fr_auto] min-h-screen max-h-screen font-[family-name:var(--font-geist-sans)] overflow-hidden">
+          <nav>
+            <Menu />
+          </nav>
+          <main className="flex flex-row justify-center h-full w-full">
+            <div className="container__textos bg-white h-full p-10 space-y-10"  style={{ width: "calc(30% - 3.5rem)", marginLeft: "3.5rem" }}>
+              <h1 className="text-6xl font-light font-inter">O Corpo  
+                <span className="block ml-44 text-6xl font-medium font-montserrat">Arte</span>
+              </h1>
+              <p className="text-xl font-light font-inter w-[90%] text-left">Textinho de criapipipi popopo lalalala sejam rainhas princesas mendigas, lugar de mulher é onde ela quiser</p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+              <Button
+                  width="w-[80%]"
+                  height="h-[45px]"
+                  color="bg-red-500"
+                  borderRadius="rounded-xl"
+                  text="Botão"
+                  image=""/>
+
+              <div>
+
+                
+                <h2 className="text-lg text-center font-medium font-montserrat mb-6">Professores</h2>
+                <ul className="space-y-4 flex flex-col items-center">
+                <li className="text-lg font-light font-inter w-[90%] flex items-center justify-center space-x-4">
+                  <div className="w-10 h-10 bg-black rounded-full"></div>
+                  <span>Carininha</span>
+                </li>
+                <li className="text-lg font-light font-inter w-[90%] flex items-center justify-center space-x-4">
+                  <div className="w-10 h-10 bg-black rounded-full"></div>
+                  <span>Fulaninha</span>
+                </li>
+                </ul>
+              </div>
+            </div>
+            <div className="container_carrossel bg-red-500 h-full w-[70%]">
+              {/* Conteúdo do container carrossel */}
+            </div>
+          </main>
+         
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
-}
+    );
+  }
