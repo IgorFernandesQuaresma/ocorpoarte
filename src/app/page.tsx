@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import Menu from "../components/menu/Menu";
 import Button from "../components/button/Button";
+import Carroussel from "../components/carroussel/Carroussel";
 
 export default function Home() {
     return (
@@ -41,8 +42,8 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="container_carrossel bg-red-500 h-full w-[70%]">
-              {/* Conteúdo do container carrossel */}
+            <div className="container_carrossel bg-slate-100 h-full w-[70%] flex justify-center items-center">
+            <Carroussel/>
             </div>
           </main>
          
