@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${inter.variable} ${montserrat.variable} antialiased`}
+        className={`${inter.variable} ${montserrat.variable} antialiased overflow-hidden`}
       >
         {children}
       </body>

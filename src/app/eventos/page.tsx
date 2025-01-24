@@ -8,24 +8,18 @@ import Button from "@/components/button/Button";
 export default function Aulas() {
   const [images, setImages] = useState([]);
 
- 
-
   useEffect(() => {
     fetch('/util.json')
       .then(response => response.json())
       .then(data => {
         // Filtrar os itens que têm o tipo "aulas"
-        const filteredImages = data.images.filter((image: { tipo: string; }) => image.tipo === 'aulas');
+        const filteredImages = data.images.filter((image: { tipo: string; }) => image.tipo === 'eventos');
         setImages(filteredImages);
-        
       })
       .catch(error => console.error('Error fetching images:', error));
   }, []);
 
   
-
-  
-  console.log(images)
 
   return (
     
@@ -35,8 +29,8 @@ export default function Aulas() {
       </nav>
       <main className="flex flex-row justify-center h-full w-full">
         <div className="container__textos bg-white h-full p-10 space-y-10" style={{ width: "calc(30% - 3.5rem)", marginLeft: "3.5rem" }}>
-          <h1 className="text-6xl font-light font-inter">Nossas  
-            <span className="block ml-24 text-6xl font-medium font-montserrat">Aulas</span>
+          <h1 className="text-6xl font-light font-inter">Nossos  
+            <span className="block ml-16 text-6xl font-medium font-montserrat">Eventos</span>
           </h1>
           <p className="text-xl font-light font-inter w-[90%] text-left">Textinho de criapipipi popopo lalalala sejam rainhas princesas mendigas, lugar de mulher é onde ela quiser</p>
 

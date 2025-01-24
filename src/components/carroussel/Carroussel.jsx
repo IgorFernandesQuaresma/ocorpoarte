@@ -37,13 +37,13 @@ export default function Carroussel() {
             {images.slice(0, 3).map((image, index) => (
                 <div 
                 key={image.id}
-                className={`w-[30%] ${cardStyles[index]?.height} } rounded-2xl shadow-md shadow-black`}
-                >
+                className={`w-[30%] ${cardStyles[index]?.height} } rounded-2xl shadow-md shadow-black `} >
                 {/* Aqui, vamos exibir a imagem correspondente com base no currentIndex */}
                 <img
                     src={images[(index + currentIndex) % images.length]?.url}
                     alt={images[(index + currentIndex) % images.length]?.description}
                     className="w-full h-full object-cover object-right-bottom rounded-lg"
+                    
                 />
                 </div>
             ))}

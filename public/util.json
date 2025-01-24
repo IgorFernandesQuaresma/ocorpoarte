@@ -1,36 +1,41 @@
 {
-    "images": [
-      {
-        "id": 1,
-        "url": "https://wallpapers.com/images/high/sasuke-and-naruto-4k-aura-l8wgcd8jjtc5gqxx.webp",
-        "description": "Uma ilustração detalhada com tons vibrantes, apresentando elementos geométricos abstratos."
-      },
-      {
-        "id": 2,
-        "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1049a675039291.5c415d1b892cc.jpg",
-        "description": "Uma composição criativa com texturas suaves e cores em tons pastéis, destacando formas orgânicas."
-      },
-      {
-        "id": 3,
-        "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f7928b75039509.5c415ec2b68f3.jpg",
-        "description": "Uma obra minimalista que combina formas geométricas com um contraste de cores vibrantes."
-      },
-      {
-        "id": 1,
-        "url": "https://wallpapers.com/images/high/sasuke-and-naruto-4k-aura-l8wgcd8jjtc5gqxx.webp",
-        "description": "Uma ilustração detalhada com tons vibrantes, apresentando elementos geométricos abstratos."
-      },
-      {
-        "id": 1,
-        "url": "https://wallpapers.com/images/high/sasuke-and-naruto-4k-aura-l8wgcd8jjtc5gqxx.webp",
-        "description": "Uma ilustração detalhada com tons vibrantes, apresentando elementos geométricos abstratos."
-      },
-      {
-        "id": 1,
-        "url": "https://wallpapers.com/images/high/sasuke-and-naruto-4k-aura-l8wgcd8jjtc5gqxx.webp",
-        "description": "Uma ilustração detalhada com tons vibrantes, apresentando elementos geométricos abstratos."
-      }
-    ]
-  }
+  "images": [
+    {
+      "id": 1,
+      "url": "https://wallpapers.com/images/high/sasuke-and-naruto-4k-aura-l8wgcd8jjtc5gqxx.webp",
+      "title": "Mariguela",
+      "description": "Uma ilustração detalhada com tons vibrantes, apresentando elementos geométricos abstratos.",
+      "tipo": "aulas",
+      "professor": "Carininha"
+    },
+    {
+      "id": 2,
+      "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/1049a675039291.5c415d1b892cc.jpg",
+      "title": "Zezinho",
+      "description": "Uma composição criativa com texturas suaves e cores em tons pastéis, destacando formas orgânicas.",
+      "tipo": "eventos",
+      "professor": "Carininha"
+    },
+    {
+      "id": 3,
+      "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f7928b75039509.5c415ec2b68f3.jpg",
+      "title": "Lulu",
+      "description": "Uma obra minimalista que combina formas geométricas com um contraste de cores vibrantes.",
+      "tipo": "aulas",
+      "professor": "Fulaninha"
+    },
+
+    {
+      "id": 4,
+      "url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/f7928b75039509.5c415ec2b68f3.jpg",
+      "title": "Tevez",
+      "description": "Uma obra minimalista que combina formas geométricas com um contraste de cores vibrantes.",
+      "tipo": "eventos",
+      "professor": "Fulaninha"
+    }
+
+    
+  ]
+}
   
   
