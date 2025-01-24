@@ -5,6 +5,10 @@ import Menu from "../../components/menu/Menu";
 import CarrousselAulas from "@/components/carroussel/CarrousselAulas";
 import Button from "@/components/button/Button";
 
+
+
+
+
 export default function Aulas() {
   const [images, setImages] = useState([]);
 
@@ -13,7 +17,7 @@ export default function Aulas() {
       .then(response => response.json())
       .then(data => {
         // Filtrar os itens que têm o tipo "aulas"
-        const filteredImages = data.images.filter((image: { tipo: string; }) => image.tipo === 'eventos');
+        const filteredImages = data.images.filter((image) => image.tipo === 'eventos');
         setImages(filteredImages);
       })
       .catch(error => console.error('Error fetching images:', error));
@@ -28,7 +32,7 @@ export default function Aulas() {
         <Menu />
       </nav>
       <main className="flex flex-row justify-center h-full w-full">
-        <div className="container__textos bg-white h-full p-10 space-y-10" style={{ width: "calc(30% - 3.5rem)", marginLeft: "3.5rem" }}>
+        <div className="container__textos bg-white h-full p-10 space-y-6" style={{ width: "calc(30% - 3.5rem)", marginLeft: "3.5rem" }}>
           <h1 className="text-6xl font-light font-inter">Nossos  
             <span className="block ml-16 text-6xl font-medium font-montserrat">Eventos</span>
           </h1>
@@ -44,16 +48,26 @@ export default function Aulas() {
           />
 
           <div>
-            <h2 className="text-lg text-center font-medium font-montserrat mb-6">Professores</h2>
-            <ul className="space-y-4 flex flex-col items-center">
-              <li className="text-lg font-light font-inter w-[90%] flex items-center justify-center space-x-4">
-                <div className="w-10 h-10 bg-black rounded-full"></div>
+            <h2 className="text-lg text-center font-medium font-montserrat mb-4">Professores</h2>
+            <ul className="space-y-2 flex flex-col items-center">
+
+
+
+            <li className="text-lg font-light font-inter w-[90%] flex items-center justify-center space-x-4">
+                <div className="w-14 h-14 rounded-full overflow-hidden">
+                  <img src="/fotos/Carina.jpeg" alt="Carininha" width={56} height={56} />
+                </div>
                 <span>Carininha</span>
               </li>
               <li className="text-lg font-light font-inter w-[90%] flex items-center justify-center space-x-4">
-                <div className="w-10 h-10 bg-black rounded-full"></div>
+                <div className="w-14 h-14 rounded-full overflow-hidden">
+                  <img src="/fotos/Eu.jpeg" alt="Fulaninha" width={56} height={56} />
+                </div>
                 <span>Fulaninha</span>
               </li>
+
+
+
             </ul>
           </div>
         </div>

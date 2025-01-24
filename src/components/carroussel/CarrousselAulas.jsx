@@ -1,21 +1,23 @@
 'use client'
 
-import React, {useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../card/Card';
 
-const CarrousselAulas = ({ images}) => {
+const CarrousselAulas = ({ images, onImageChange }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
 
-  
+  useEffect(() => {
+    if (onImageChange) {
+      onImageChange(currentIndex);
+    }
+  }, [currentIndex, onImageChange]);
+
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    
   };
 
   return (
